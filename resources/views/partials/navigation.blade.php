@@ -12,21 +12,12 @@
                 <a class="nav-link text-primary {{ ($tittle === "Beranda")? 'active' : '' }}" href="/beranda">Beranda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-primary {{ ($tittle === "Beranda")? 'active' : '' }}" href="/beranda">Alur</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-primary {{ ($tittle === "Beranda")? 'active' : '' }}" href="/beranda">Ketentuan</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link text-primary {{ ($tittle === "Beranda")? 'active' : '' }}" href="/beranda">Pengaduan</a>
             </li>
-        </ul>
 
-        <ul class="navbar-nav">
-            @auth
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Hi, {{ auth()->user()->nama }}
+                    Hi yantee
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Dashboard</a></li>
@@ -34,20 +25,7 @@
                     <li><a class="dropdown-item" href="#">Keluar</a></li>
                 </ul>
             </li>
-            @else
-
-            {{-- navbar untuk login --}}
-            <li class="nav-item nav-lg">
-                <a class="nav-link text-light {{ ($tittle === "Masuk")? 'active' : '' }}" style="background-color: #0065F2; border-radius: 50px; padding-left: 30px; padding-right: 30px" href="/masuk">Masuk</a>
-            </li>
-            
-            @endauth
         </ul>
-
-       
-        <!-- Button trigger modal -->
-
-        
     </div>
     </div>
 </nav>
